@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>Juego de adiviar un numero :)</h1>
+        <h3>
+            Cada vez que ingreses el numero que piensas, te dire si ganaste o no,
+            luego tiene que volver a cargar la pagina para jugar nuevamente.
+        </h3>
+
+        <script>
+
+            function saltarLinea(){
+                document.write("<br><br>");
+            }
+
+            function imprimir(texto){
+                document.write(texto);
+                saltarLinea();
+            }
+
+            function getRandom(){
+                return Math.round(Math.random()*10);
+            }
+
+            var number = parseInt(prompt("Ingrese un numero"));
+            var numberRandom = getRandom();
+
+            imprimir("Tu numero es " + number);
+            imprimir("A JUGAR !!!");
+
+            if(number == numberRandom){
+                imprimir("Felicidades adivinaste el numero GANASTE!!! :)");
+            }
+            else{
+                imprimir("So sorry, perdiste :( ");
+            }
+
+            imprimir("El numero secreto era el .... Numero  " + numberRandom);
+
+        </script>
+        
+    </body>
+</html>
