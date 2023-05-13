@@ -19,11 +19,14 @@
 
             header{
                 background: rgba(39, 2, 73, 0.80);
+                width: 70%;
+                margin: auto;
                 text-align: center;
                 color: white;
                 padding: 20px 20px;
                 border-radius: 30px;
                 font-size: 20px;
+                
             }
 
             a{
@@ -35,9 +38,41 @@
                 background: rgba(120, 5, 155, 0.80);
                 text-align: center;
                 font-size: 40px;
+                
                 margin: auto;
-                margin: 20px 10px;
+                margin-top: 20px;
                 border-radius: 20px;
+            }
+
+            @media screen and (max-width: 900px){
+                
+                html, body{
+                    width: auto;
+                    height: 100%;
+                }
+
+                body{
+                    background: url(back.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+                header{
+                    width: auto;
+                    display: block;
+                }
+
+                h2{
+                    display: block;
+                    width: auto;
+                }
+
+                a{
+                    width: 80%;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: aliceblue;
+                }
             }
         </style>
     </head>
